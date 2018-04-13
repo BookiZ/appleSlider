@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        p{
+            margin: 20px 0;
+        }
+        .main{
+            text-align: center;
+        }
+        .main h1,h2{
+            font-weight: normal;
+            margin: 20px 0;
+        }
+        .window{
+            width: 920px;
+            overflow: hidden;
+            margin:0 auto;
+            border: 1px solid white;
+            box-shadow: 0 0 3px #AAAAAA;
+            border-bottom-right-radius: 4px;
+
+        }
+        .images{
+            display: flex;
+            align-items: flex-start;
+            transition: all 0.5s;
+
+        }
+        .images img{
+            width: 920px;
+            height: 450px;
+
+        }
+        .active{
+            background:url("./img/active_bg.png");
+        }
+        ul,li{
+            list-style: none;
+        }
+        #buttons{
+            height: 45px;
+            text-align: center;
+            background: url("./img/panel.jpg") no-repeat;
+        }
+        #buttons ul{
+            display: inline-block;
+        }
+        #buttons li{
+            float: left;
+            width: 60px;
+            height: 45px;
+
+        }
+       
+        #buttons li a{
+        /*  display: block;
+            height: 35px;
+            padding-top: 10px;*/
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .fbar{}
+    </style>
+</head>
+<body>
+<div class="main">
+<h1>Apple-like Gallery<br/>
+    Slideshow
+</h1>
+<h2>View the original tutorial »</h2>
+<div class="window">
+
+    <div class="images">
+        <img src="./img/macbook.jpg" alt="图片1">
+        <img src="./img/imac.jpg" alt="图片2">
+        <img src="./img/info.jpg" alt="图片3">
+        <img src="./img/iphone.jpg" alt="图片4">
+    </div>
+    <div id=buttons>
+        <ul class="clearfix">
+           <!-- <li class="fbar"></li>-->
+            <li><a href><img src="./img/thumb_macbook.png" alt=""></a></li>
+            <li><a href><img src="./img/thumb_imac.png" alt=""></a></li>
+            <li><a href><img src="./img/thumb_about.png" alt=""></a></li>
+            <li><a href><img src="./img/thumb_iphone.png" alt=""></a></li>
+        </ul>
+
+  </div>
+</div>
+</div>
+<p>This is a tutorialzine demo. View the original tutorial to read and download the source files.</p>
+<p>The gallery features artwork from rambocre, pickupjojo and codenamebender</p>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/main2.js"></script>
+</body>
+</html>
