@@ -13,6 +13,30 @@
             padding: 0;
             text-align: center;
         }
+        h1{
+
+            font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+            font-size: 42px;
+            font-weight: normal;
+            padding: 35px;
+
+        }
+        h2 {
+            font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            position: relative;
+            top: -19px;
+        }
+        a, a:visited {
+            color: #0196e3;
+            text-decoration: none;
+            outline: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         p{
             margin: 20px 0;
         }
@@ -61,13 +85,17 @@
             float: left;
             width: 60px;
             height: 45px;
+            border-left:1px solid #dddddd;
 
         }
-       
+        #buttons li:last-child{
+            border-right:1px solid #dddddd;
+        }
+
         #buttons li a{
-        /*  display: block;
+            display: block;
             height: 35px;
-            padding-top: 10px;*/
+            padding-top: 10px;
         }
         .clearfix::after{
             content: '';
@@ -82,7 +110,7 @@
 <h1>Apple-like Gallery<br/>
     Slideshow
 </h1>
-<h2>View the original tutorial »</h2>
+<h2>View the <a href="#">original tutorial »</a>original tutorial »</h2>
 <div class="window">
 
     <div class="images">
@@ -94,17 +122,17 @@
     <div id=buttons>
         <ul class="clearfix">
            <!-- <li class="fbar"></li>-->
-            <li><a href><img src="./img/thumb_macbook.png" alt=""></a></li>
-            <li><a href><img src="./img/thumb_imac.png" alt=""></a></li>
-            <li><a href><img src="./img/thumb_about.png" alt=""></a></li>
-            <li><a href><img src="./img/thumb_iphone.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/thumb_macbook.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/thumb_imac.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/thumb_about.png" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="./img/thumb_iphone.png" alt=""></a></li>
         </ul>
 
   </div>
 </div>
 </div>
-<p>This is a tutorialzine demo. View the original tutorial to read and download the source files.</p>
-<p>The gallery features artwork from rambocre, pickupjojo and codenamebender</p>
+<p style="font-size: 10px">This is a tutorialzine demo. View the <a href="">original tutorial</a> to read and download the source files.</p>
+<p style="font-size: 10px">The gallery features artwork from <a href="">rambocre, pickupjojo</a> and <a href="">codenamebender</a></p>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="./js/main2.js"></script>
 </body>

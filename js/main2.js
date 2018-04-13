@@ -2,7 +2,7 @@ var allButtons=$('#buttons>ul>li')
 for(let i=0;i<allButtons.length;i++){
     $(allButtons[i]).on('click',function (x) {
 
-        var index=$(x.target).index()
+        var index=$(this).index()
         console.log(index)
         var p=index*-920
         $('.images').css({
@@ -12,16 +12,7 @@ for(let i=0;i<allButtons.length;i++){
         activeButton(allButtons.eq(n))
 
     })
-    /*allButtons[i].addEventListener('click',function (x) {
-        var index=$(x.currentTarget).index()
-        var p=index*-920
-        $('.images').css({
-            transform: 'translate(' + p + 'px)'
-        })
-        n=index
-        activeButton(allButtons.eq(n))
 
-    },false)*/
 }
 var n=0
 
